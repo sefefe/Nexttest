@@ -8,8 +8,9 @@ jobs:
   starter:
     name: Lint
     runs-on: ubuntu-latest
-      - name: check out
-        uses: actions/checkout@v3
-      - name: run lint
-        run: npm run lint
-        
+      steps:
+        - name: check out
+          uses: actions/checkout@v3
+        - name: run lint
+          run: npm run lint
+
