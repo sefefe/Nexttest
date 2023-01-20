@@ -20,5 +20,13 @@ Feature2
 */
 export default function  Docs(){
     const router = useRouter()
+<<<<<<< HEAD
     return <h1>docs</h1>;
+=======
+    const {params=[]} = router.query
+    if(params.length==2)
+    console.log(`features =${params[0]} and concepts = ${params[1]}`)
+    else if(params.length==1)
+    return <h1>feature {params[1]}</h1>;
+>>>>>>> 1.4
 }
