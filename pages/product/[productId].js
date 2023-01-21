@@ -1,4 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
+/*
+dynamic route crated by adding [] and path parameter
+is mapped to the the product id */
 import { useRouter } from "next/router";
 
 
